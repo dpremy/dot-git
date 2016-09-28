@@ -1,0 +1,16 @@
+# OS generated files
+._*
+.cache
+.Trashes
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# Other files
+*~
+*.bak
+*.orig
+*.sw[nop]
+*.tmp
+tags
+TAGS
