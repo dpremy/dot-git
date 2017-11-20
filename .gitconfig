@@ -1,12 +1,5 @@
 # Custom .gitconfig settings
 
-# Please, specify these variables in ~/.gitconfig_local
-# which is included at the end of this file
-# Note: include requires git > 1.8
-# [user]
-#   email = dpremy@outlook.com
-#   name = David Remy
-
 [core]
   excludefile = ~/.gitignore
   editor = vim
@@ -30,5 +23,7 @@
 [push]
   # 'simple' requires git > 2.0, if running < 2.0 use 'matching'
   default = simple
+
+# include requires git > 1.8
 [include]
   path = ~/.gitconfig_local
