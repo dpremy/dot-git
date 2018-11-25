@@ -1,7 +1,7 @@
 # Custom .gitconfig settings
 
 [core]
-  excludefile = ~/.gitignore
+  excludesfile = ~/.gitignore
   editor = vim
 [color]
   ui = auto
