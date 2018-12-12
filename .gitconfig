@@ -23,11 +23,21 @@
 [push]
   # 'simple' requires git > 2.0, if running < 2.0 use 'matching'
   default = simple
-
+[status]
+  # branch and short were introduced in 1.8.4
+  branch = true
+  short = true
+[log]
+  decorate = short
+  abbrevCommit = true
+[help]
+  autocorrect = 3
+[format]
+  # based on example from https://speakerdeck.com/allthedoll/tips-and-tricks-gotta-git-them-all?slide=12
+  pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
 [alias]
   # based on comment at https://stackoverflow.com/a/35081008
   all = "!f() { find . -name .git -type d | sed s,/.git,, | xargs -I{} git -C {} $1; }; f"
-
-# include requires git > 1.8
 [include]
+  # include requires git > 1.8
   path = ~/.gitconfig_local
