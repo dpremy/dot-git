@@ -1,12 +1,14 @@
 # Custom .gitconfig settings
 
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore_global
   editor = vim
 [color]
   ui = auto
   diff = auto
   grep = auto
+  branch = auto
+  status = auto
   [color "branch"]
     current = yellow reverse
     local = yellow
@@ -38,6 +40,8 @@
 [alias]
   # based on comment at https://stackoverflow.com/a/35081008
   all = "!f() { find . -name .git -type d | sed s,/.git,, | xargs -I{} git -C {} $1; }; f"
+[fetch]
+  prune = true
 [include]
   # include requires git > 1.8
   path = ~/.gitconfig_local
