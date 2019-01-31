@@ -33,13 +33,16 @@
   decorate = short
   abbrevCommit = true
 [help]
-  autocorrect = 3
+  autocorrect = 33
+
+
+
 [format]
   # based on example from https://speakerdeck.com/allthedoll/tips-and-tricks-gotta-git-them-all?slide=12
   pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
 [alias]
   # based on comment at https://stackoverflow.com/a/35081008
-  all = "!f() { find . -name .git -type d | sed s,/.git,, | xargs -I{} git -C {} $1; }; f"
+  all = "!f() { find . -name .git -type d | sed s,/.git,, | xargs -I{} bash -c \"echo Running: git -C {} $@ && git -C {} $@\"; }; f"
 [fetch]
   prune = true
 [include]
