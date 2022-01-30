@@ -1,7 +1,8 @@
-# ---- GPG secret keyrings ----
+######### Misc Secret Files #########
 secring.*
+*.ppk
 
-# ---- vim files ----
+######### vim Files #########
 # Swap
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
@@ -15,22 +16,29 @@ Session.vim
 # Temporary
 .netrwhist
 *~
+
 # Auto-generated tag files
 tags
+
 # Persistent undo
 [._]*.un~
 
-# ---- OS generated files ----
+######### OS Generated Files #########
 ._*
 .cache
 .Trashes
+.Trash-*
 .DS_Store
 [Dd]esktop.ini
 Thumbs.db
 
-# ---- Misc files
+######### Misc Files #########
 *.b[ca]k
 *.orig
 *.sw[nop]
 *.tmp
 TAGS
+log/
+*.log
+*.ori
+*.orig
