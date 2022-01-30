@@ -4,7 +4,8 @@
   excludesfile = ~/.gitignore_global
   editor = vi
   pager = less
-[diff]                                                                                                                                                   tool = vimdiff
+[diff]
+  tool = vimdiff
 [difftool]
   prompt = false
 [color]
