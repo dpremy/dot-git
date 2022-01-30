@@ -4,6 +4,9 @@
   excludesfile = ~/.gitignore_global
   editor = vi
   pager = less
+[diff]                                                                                                                                                   tool = vimdiff
+[difftool]
+  prompt = false
 [color]
   # colors based on solarized palette https://ethanschoonover.com/solarized/
   ui = auto
