@@ -37,6 +37,8 @@
     localBranch = "#eee8d5" # white
     remoteBranch = "#dc322f" # red
     unmerged = "#268bd2" # blue
+[init]
+  defaultBranch = main
 [push]
   # 'simple' requires git > 2.0, if running < 2.0 use 'matching'
   default = simple
