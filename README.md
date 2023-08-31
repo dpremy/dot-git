@@ -19,4 +19,12 @@ git clone -q https://github.com/svetlyak40wt/dotfiler ~/.files
 
 ## Usage
 
+Create ~/.gitconfig_local, and at a minimum add your user information.
+
+```ini
+[user]
+  name = "<Full Name>"
+  email = "<email>"
+```
+
 [.gitconfig](.gitconfig) has comments and may be worth reviewing.
