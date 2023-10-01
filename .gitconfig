@@ -62,13 +62,14 @@
 
 [format]
   # based on example from https://github.com/allthedoll/git
-  pretty = "%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"
+  pretty = "%C(red)%h%C(reset) %C(blue)%G?%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)"
 
 [alias]
   # based on comment at https://stackoverflow.com/a/35081008
   all = "!f() { find . -name .git -type d | sed s,/.git,, | xargs -I{} bash -c \"echo Running: git -C {} $@ && git -C {} $@\"; }; f"
   # based on example from https://github.com/allthedoll/git
-  logp = "git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+  logp = "log --color --graph --pretty=format:'%C(red)%h%C(reset) %C(blue)%G?%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative"
+
 
 [include]
   # include requires git > 1.8
