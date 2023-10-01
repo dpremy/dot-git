@@ -25,6 +25,15 @@ Create ~/.gitconfig_local, and at a minimum add your user information.
 [user]
   name = "<Full Name>"
   email = "<email>"
+  # add a trailing '!' if the key being used for signing is a subkey
+  signingkey = <gpg_key_id>!
+
+[commit]
+  gpgsign = true
+
+[tag]
+  # requires git 2.23+
+  gpgSign = true
 ```
 
 [.gitconfig](.gitconfig) has comments and may be worth reviewing.
