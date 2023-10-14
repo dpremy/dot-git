@@ -60,16 +60,14 @@
 [help]
   autocorrect = 33
 
-[format]
-  # based on example from https://github.com/allthedoll/git
-  pretty = "%C(red)%h%C(reset) %C(blue)%G?%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)"
-
 [alias]
   # based on comment at https://stackoverflow.com/a/35081008
   all = "!f() { find . -name .git -type d | sed s,/.git,, | xargs -I{} bash -c \"echo Running: git -C {} $@ && git -C {} $@\"; }; f"
+  # graph and pretty variations
   # based on example from https://github.com/allthedoll/git
-  logp = "log --color --graph --pretty=format:'%C(red)%h%C(reset) %C(blue)%G?%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative"
-
+  logp = "log --color --pretty=format:'%C(red)%h%C(reset) %C(blue)%G?%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative"
+  logg = "log --color --graph --abbrev-commit --date=relative"
+  logpg = "log --color --graph --pretty=format:'%C(red)%h%C(reset) %C(blue)%G?%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative"
 
 [include]
   # include requires git > 1.8
