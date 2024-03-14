@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository contains the dotfile and config I use with git. It is desinged to work with [GNU stow](https://www.gnu.org/software/stow/), but can easily be used without it.
+This repository contains the dotfile and config I use with git. It is designed to work with [GNU stow](https://www.gnu.org/software/stow/), but can easily be used without it.
 
 ## Installation
 
@@ -25,6 +25,7 @@ Create ~/.gitconfig_local, and at a minimum add your user information.
   name = "<Full Name>"
   email = "<email>"
   # add a trailing '!' if the key being used for signing is a subkey
+  # you can obtain the key id with `gpg --list-keys`, or for subkeys use `gpg --edit-key <identity>`
   signingkey = <gpg_key_id>!
 
 [commit]
