@@ -62,7 +62,7 @@
 
 [alias]
   # based on comment at https://stackoverflow.com/a/35081008
-  all = "!f() { find . -name .git -type d | sed s,/.git,, | xargs -I{} bash -c \"echo Running: git -C {} $@ && git -C {} $@\"; }; f"
+  all = "!f() { find . -maxdepth 2 -name .git -type d | sed s,/.git,, | xargs -I{} bash -c \"echo Running: git -C {} $@ && git -C {} $@; echo \"; }; f"
   # graph and pretty variations
   # based on example from https://github.com/allthedoll/git
   logp = "log --color --pretty=format:'%C(red)%h%C(reset) %C(blue)%G?%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative"
